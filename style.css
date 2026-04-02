@@ -10,23 +10,27 @@ body {
 /* 전체 배경 */
 .hero {
   height: 100vh;
-  background: url('kv.jpg') no-repeat center;
-  background-size: cover;
   position: relative;
+  background: linear-gradient(
+    180deg,
+    #0b2a5c 0%,
+    #0d3c85 40%,
+    #071a3a 100%
+  );
 }
 
-/* 어둡게 덮기 (가독성 핵심) */
+/* 어둡게 덮기 */
 .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.55)
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.4)
   );
 }
 
-/* 콘텐츠 영역 */
+/* 콘텐츠 */
 .content {
   position: absolute;
   bottom: 80px;
@@ -73,7 +77,7 @@ h1 {
   box-shadow: 0 10px 25px rgba(255, 80, 120, 0.4);
 }
 
-/* 모바일 최적화 */
+/* 모바일 */
 @media (max-width: 420px) {
   h1 {
     font-size: 28px;
