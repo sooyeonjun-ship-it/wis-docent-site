@@ -11,8 +11,8 @@ body {
   font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   color: #ffffff;
   background:
-    radial-gradient(circle at top center, rgba(0, 204, 255, 0.18), transparent 22%),
-    linear-gradient(180deg, #02162d 0%, #03284b 48%, #031120 100%);
+    radial-gradient(circle at top center, rgba(0, 204, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, #03192f 0%, #052d52 50%, #03111f 100%);
   min-height: 100vh;
 }
 
@@ -22,9 +22,9 @@ a {
 
 .landing {
   width: 100%;
-  max-width: 480px;
+  max-width: 430px;
   margin: 0 auto;
-  padding: 28px 20px 40px;
+  padding: 24px 20px 40px;
 }
 
 .hero-card {
@@ -33,50 +33,47 @@ a {
 
 .hero-visual {
   position: relative;
-  height: 560px;
-  border-radius: 34px;
+  width: 100%;
+  height: 520px;
+  border-radius: 30px;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(34, 82, 214, 0.92) 0%, rgba(0, 180, 255, 0.88) 100%);
-  box-shadow:
-    0 24px 50px rgba(0, 0, 0, 0.34),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, #234fd1 0%, #12b7ff 100%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .visual-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
-    radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 45%);
+    linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02)),
+    radial-gradient(circle at center, rgba(255,255,255,0.07), transparent 45%);
 }
 
 .visual-block {
   position: absolute;
   background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(2px);
 }
 
 .block-1 {
   top: 0;
   left: 0;
-  width: 78px;
-  height: 210px;
-  background: rgba(66, 38, 180, 0.55);
+  width: 76px;
+  height: 200px;
+  background: rgba(70, 45, 190, 0.55);
 }
 
 .block-2 {
-  top: 34px;
-  left: 42px;
+  top: 36px;
+  left: 44px;
   width: 72px;
-  height: 160px;
-  background: rgba(0, 198, 255, 0.34);
+  height: 150px;
+  background: rgba(0, 200, 255, 0.28);
 }
 
 .block-3 {
   left: 0;
   right: 0;
-  bottom: 78px;
+  bottom: 80px;
   height: 64px;
   background: rgba(255, 255, 255, 0.10);
 }
@@ -84,22 +81,22 @@ a {
 .hero-visual::before {
   content: "";
   position: absolute;
-  top: 28px;
-  left: 80px;
-  width: 250px;
-  height: 120px;
-  background: rgba(32, 120, 255, 0.22);
+  top: 24px;
+  left: 82px;
+  width: 240px;
+  height: 110px;
+  background: rgba(40, 120, 255, 0.18);
 }
 
 .hero-visual::after {
   content: "";
   position: absolute;
-  right: -40px;
-  bottom: -30px;
-  width: 240px;
-  height: 240px;
+  right: -30px;
+  bottom: -20px;
+  width: 220px;
+  height: 220px;
   background: rgba(255, 255, 255, 0.10);
-  transform: rotate(-16deg);
+  transform: rotate(-15deg);
 }
 
 .hero-visual-text {
@@ -111,78 +108,75 @@ a {
   justify-content: center;
   text-align: center;
   padding: 30px;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.34);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
 .hero-year {
   display: block;
   margin-bottom: 10px;
-  font-size: 62px;
+  font-size: 56px;
   line-height: 1;
   font-weight: 800;
-  letter-spacing: -0.04em;
 }
 
 .hero-visual-text strong {
-  font-size: 38px;
-  line-height: 1.12;
+  font-size: 34px;
+  line-height: 1.15;
   font-weight: 800;
-  letter-spacing: -0.04em;
 }
 
 .hero-logo {
   position: absolute;
-  right: 28px;
-  bottom: 24px;
-  font-size: 54px;
+  right: 26px;
+  bottom: 22px;
+  font-size: 52px;
   font-weight: 800;
-  letter-spacing: -0.06em;
-  color: rgba(255, 255, 255, 0.94);
+  color: rgba(255,255,255,0.95);
 }
 
 .hero-copy {
-  padding: 34px 6px 0;
+  padding: 30px 4px 0;
 }
 
 .eyebrow {
-  margin: 0 0 16px;
-  font-size: 15px;
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  color: #68dfff;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  color: #64ddff;
+  letter-spacing: 0.08em;
 }
 
 h1 {
-  margin: 0 0 18px;
-  font-size: 42px;
-  line-height: 1.16;
+  margin: 0 0 16px;
+  font-size: 38px;
+  line-height: 1.18;
   font-weight: 800;
   letter-spacing: -0.04em;
   color: #ffffff;
 }
 
 .hero-text {
-  margin: 0 0 30px;
-  font-size: 19px;
+  margin: 0 0 28px;
+  font-size: 18px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255,255,255,0.75);
 }
 
 .cta-button {
   display: block;
   width: 100%;
-  padding: 24px 20px;
-  border-radius: 24px;
+  padding: 22px 18px;
+  border-radius: 22px;
   text-align: center;
   font-size: 22px;
   font-weight: 800;
   color: #ffffff;
-  background: linear-gradient(90deg, #ff008c 0%, #ff4f77 48%, #ff7447 100%);
-  box-shadow: 0 16px 30px rgba(255, 65, 125, 0.30);
-}
-
-.cta-button:active {
-  transform: scale(0.99);
+  background: linear-gradient(90deg, #ff008c 0%, #ff4f77 50%, #ff7447 100%);
+  box-shadow: 0 16px 28px rgba(255, 76, 120, 0.3);
 }
 
 @media (max-width: 420px) {
@@ -191,24 +185,23 @@ h1 {
   }
 
   .hero-visual {
-    height: 500px;
-    border-radius: 28px;
+    height: 480px;
   }
 
   .hero-year {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .hero-visual-text strong {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .hero-logo {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .hero-text {
@@ -217,6 +210,5 @@ h1 {
 
   .cta-button {
     font-size: 20px;
-    padding: 22px 18px;
   }
 }
